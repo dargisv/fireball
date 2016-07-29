@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Your healthcare plan</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="test_css.css">
+</head>
+<body>
+	<article class="mainContent">
+		<header>
+			<h2>Let's talk about your health.</h2>
+			<p>We use this info to put you in a group with people close to your attributes.</p>
+		</header>
+		<form action="#">
+
+
+
+			<section class="gender">
+				<h3>Your gender</h3>
+				<label class="woman">
+					<input type="radio" name="gender" value="woman" required>
+					<img src="img/woman.png" alt="Bicycle" width="50px">
+				</label>
+				<label class="man">
+					<input type="radio" name="gender" value="man" required>
+					<img src="img/man.png" alt="Bicycle" width="50px">
+				</label>	
+			</section>
+
+			<section class="heightWeight">
+				<h3>Height & Weight</h3>
+				<input class="heightWeightInput1" type="text" name="height" placeholder="cm" required>
+				<input class="heightWeightInput2" type="text" name="weight" placeholder="kg" required>
+			</section>
+
+			<section class="activityLevel">
+				<h3>Activity Level</h3>
+				<p>How active are you on a weekly basis?</p>
+
+				<label>
+					<label class="woman">
+					<input type="radio" name="active" value="notactive" required>
+					<img src="img/beach.png" alt="Bicycle" width="50px">
+				</label>
+				<label class="man">
+					<input type="radio" name="active" value="active" required>
+					<img src="img/bicycle2.png" alt="Bicycle" width="50px">
+				</label>	
+			</section>
+
+			<button>Complete</button>
+		</form>
+	</article>
+</body>
+</html>
