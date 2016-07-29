@@ -1,0 +1,164 @@
+body {
+	box-sizing: border-box;
+	background-color: #f7f7f7;
+}
+
+.mainContent {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	position: absolute;
+	left: 28%;
+	color: #747677;
+	background-color: #fff;
+	margin-top: 50px;
+	border-radius: 5px;
+
+	width: 600px;
+	max-width: 600px;
+	height: 650px;
+
+}
+
+header {
+	font-size: 16px;
+	margin-top: 50px;
+}
+
+header p {
+	margin-top: -10px;
+	font-size: 14px;
+	color: #b4aea9;
+}
+
+
+
+.heightWeight, .gender, .activityLevel {
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #b4aea9;
+	width: 460px;
+}
+
+/* GENDER SECTION */
+.woman,.man  {
+	margin-left: 60px;
+	position: relative;
+	top: -10px;
+}
+
+.gender h3 {
+	font-size: 12px;
+	position: relative;
+	left: -185px;
+	top: 41px;
+	color: #b4aea9;
+	/*font-weight: lighter;*/
+	text-transform: uppercase;
+}
+
+/* HEIGHT & WEIGHT SECTION */
+.heightWeight h3 {
+	font-size: 12px;
+	position: relative;
+	left: -174px;
+	top: 29px;
+	color: #b4aea9;
+	text-transform: uppercase;
+}
+
+.heightWeightInput1, .heightWeightInput2 {
+	width: 60px;
+	height: 30px;
+	border: 2px solid #f7f7f7;
+	border-radius: 5px;
+	background-color: #feaca4;
+	padding: 5px;
+	margin-left: 20;
+	position: relative;
+	left: 35px;
+	top: -15px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+}
+
+.heightWeightInput1 {
+	position: relative;
+	left: 8px;
+}
+
+.heightWeightInput1:hover {
+	border: 2px solid #17c783;
+	color: #747677;
+	background-color: #fff;
+}
+
+.heightWeightInput2:hover {
+	border: 2px solid #17c783;
+	color: #747677;
+	background-color: #fff;
+}
+
+/* ACTIVITY LEVEL */
+.activityLevel h3 {
+	font-size: 12px;
+	position: relative;
+	left: -174px;
+	top: 29px;
+	color: #b4aea9;
+	text-transform: uppercase;
+}
+
+.activityLevel p {
+	margin-top: -10px;
+	font-size: 14px;
+	color: #b4aea9;
+	position: relative;
+	top: -19px;
+	left: 33px;
+	padding: 5px;
+}
+
+
+/* BUTTON */
+button {
+	margin: 20px;
+	padding: 15px;
+	border: none;
+	background-color: #17c783;
+	color: white;
+	border-radius: 20px;
+	text-transform: uppercase;
+	width: 210px;
+}
+
+button:hover {
+	cursor:pointer;
+	background-color: #15ba7b;
+}
+
+/* LABELS FOR IMAGES */
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border: 2px solid transparent;
+  opacity: .5;
+  padding: 3px;
+}
+
+img:hover {
+	cursor:pointer;
+	border-radius: 50px;
+  	border: 2px solid #17c783;
+	opacity: 1;
+}
+
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border: 2px solid #17c783;
+  border-radius: 50px;
+  opacity: 1;
+}
